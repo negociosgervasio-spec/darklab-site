@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resultados na Academia — Produtos Dark Lab</title>
+    <meta
+      name="description"
+      content="Produtos Dark Lab que uso para ganhar massa magra. Fotos, vídeo e links de afiliado Mercado Livre."
+    />
+    <!-- Tailwind CDN (apenas para protótipo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Paleta inspirada em Dark Lab: preto profundo, grafite, verde neon e dourado suave */
+      :root {
+        --dl-bg: #0b0b0d;
+        --dl-surface: #0f1113;
+        --dl-muted: #9aa0a6;
+        --dl-accent: #00d26a; /* verde neon */
+        --dl-accent-2: #ffd166; /* dourado suave */
+      }
+      .dl-bg {
+        background-color: var(--dl-bg);
+      }
+      .dl-surface {
+        background-color: var(--dl-surface);
+      }
+      .dl-muted {
+        color: var(--dl-muted);
+      }
+      .dl-accent {
+        color: var(--dl-accent);
+      }
+      .dl-accent-bg {
+        background-color: var(--dl-accent);
+      }
+      .dl-accent-2-bg {
+        background-color: var(--dl-accent-2);
+      }
+      /* glass effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+      }
+      /* portrait video container */
+      .portrait-video {
+        width: 100%;
+        max-width: 420px;
+        aspect-ratio: 9/16;
+      }
+    </style>
+  </head>
+  <body class="dl-bg text-gray-100 antialiased">
+    <!-- Header -->
+    <header class="max-w-6xl mx-auto px-6 py-10">
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+      >
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+            Resultados Reais com Dark Lab
+          </h1>
+          <p class="mt-2 dl-muted max-w-xl">
+            Os 4 produtos que uso para ganhar massa magra. Veja fotos, assista
+            ao vídeo em portrait e compre com meus links de afiliado Mercado
+            Livre.
+          </p>
+        </div>
+        <div class="text-right">
+          <a
+            href="#produtos"
+            class="inline-block dl-accent-bg hover:opacity-90 text-black font-semibold px-4 py-2 rounded"
+            >Ver Produtos</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+      <!-- Promoção em destaque: vídeo portrait + fotos -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mb-12">
+        <!-- Vídeo portrait -->
+        <div
+          class="lg:col-span-2 glass rounded-lg p-6 flex flex-col items-start gap-4"
+        >
+          <h2 class="text-xl font-bold">Vídeo de Resultados</h2>
+          <div class="flex flex-col lg:flex-row items-start gap-6">
+            <div class="portrait-video rounded overflow-hidden shadow-lg">
+              <!-- Vídeo em portrait (mantive o arquivo que você mencionou) -->
+              <video
+                controls
+                poster="assets/photo1.jpg"
+                class="w-full h-full object-cover"
+              >
+                <source src="assets/video.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeo.
+              </video>
+            </div>
+
+            <div class="flex-1">
+              <p class="dl-muted">
+                Assista ao meu depoimento em formato portrait. Aqui mostro
+                treinos, rotina e como integro os produtos Dark Lab ao meu plano
+                para ganhar massa magra.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li class="flex items-center gap-2">
+                  <span
+                    class="inline-block w-2 h-2 rounded-full dl-accent-bg"
+                  ></span
+                  ><strong>Treino:</strong> foco em hipertrofia
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="inline-block w-2 h-2 rounded-full dl-accent-bg"
+                  ></span
+                  ><strong>Alimentação:</strong> aporte calórico controlado
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="inline-block w-2 h-2 rounded-full dl-accent-bg"
+                  ></span
+                  ><strong>Suplementação:</strong> produtos Dark Lab
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galeria de fotos -->
+        <aside class="space-y-4">
+          <h3 class="text-lg font-semibold">Fotos</h3>
+          <div class="grid grid-cols-1 gap-4">
+            <img
+              src="assets/photo1.png"
+              alt="Antes e depois 1"
+              class="w-full h-full object-fill rounded shadow-md"
+              loading="lazy"
+            />
+            <img
+              src="assets/photo2.jpg"
+              alt="Treino e suplemento"
+              class="w-full h-full object-fill object-center rounded shadow-md"
+              loading="lazy"
+            />
+            <img
+              src="assets/photo3.png"
+              alt="Resultado final"
+              class="w-full h-full object-fill rounded shadow-md"
+              loading="lazy"
+            />
+          </div>
+        </aside>
+      </section>
+
+      <hr class="border-gray-800 mb-10" />
+
+      <!-- Produtos -->
+      <section id="produtos" class="mb-12">
+        <h2 class="text-2xl font-bold mb-4">Meus 4 Produtos Dark Lab</h2>
+        <p class="dl-muted mb-6">
+          Clique em cada produto para abrir o card com informações adicionais.
+          Os botões levam ao Mercado Livre via meu link de afiliado.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Produto 1 -->
+          <article class="dl-surface rounded-lg p-6 flex flex-col shadow-lg">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_2X_630816-MLA99935887857_112025-F.webp"
+                alt="Whey Isolate Protein Fuse Refil 1,8kg Dark Lab"
+                class="w-28 h-28 object-contain rounded"
+                loading="lazy"
+              />
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold">
+                  Whey Protein Isolado (LOW CARB)
+                </h3>
+                <p class="dl-muted text-sm mt-1">
+                  Proteína isolada para máxima recuperação e síntese muscular.
+                </p>
+              </div>
+              <div class="flex flex-col items-end gap-2">
+                <a
+                  href="https://meli.la/1ptritQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block dl-accent-2-bg hover:opacity-95 text-black font-bold px-4 py-2 rounded"
+                  >Comprar</a
+                >
+                <button
+                  class="text-sm dl-muted underline"
+                  data-product="p1"
+                  onclick="openModal('p1')"
+                >
+                  Mais informações
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 text-sm dl-muted">
+              <strong>Uso:</strong> Pós-treino · <strong>Dosagem:</strong> 30 g
+            </div>
+          </article>
+
+          <!-- Produto 2 -->
+          <article class="dl-surface rounded-lg p-6 flex flex-col shadow-lg">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://http2.mlstatic.com/D_Q_NP_848860-MLA99964507641_112025-R.webp"
+                alt="Creatina Monohidratada Pura"
+                class="w-28 h-28 object-contain rounded"
+                loading="lazy"
+              />
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold">
+                  Creatina Monohidratada Pura
+                </h3>
+                <p class="dl-muted text-sm mt-1">
+                  Força e performance para treinos intensos.
+                </p>
+              </div>
+              <div class="flex flex-col items-end gap-2">
+                <a
+                  href="https://meli.la/1FUBKa3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block dl-accent-2-bg hover:opacity-95 text-black font-bold px-4 py-2 rounded"
+                  >Comprar</a
+                >
+                <button
+                  class="text-sm dl-muted underline"
+                  data-product="p2"
+                  onclick="openModal('p2')"
+                >
+                  Mais informações
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 text-sm dl-muted">
+              <strong>Uso:</strong> Antes do treino ·
+              <strong>Dosagem:</strong> 5 g/dia
+            </div>
+          </article>
+
+          <!-- Produto 3 BCAA -->
+          <article class="dl-surface rounded-lg p-6 flex flex-col shadow-lg">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_2X_861441-MLA100067599317_122025-F.webp"
+                alt="Bcaa"
+                class="w-28 h-28 object-contain rounded"
+                loading="lazy"
+              />
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold">
+                  BCAA — Aminoácidos de Cadeia Ramificada
+                </h3>
+                <p class="dl-muted text-sm mt-1">
+                  Recuperação rápida e preservação da massa magra.
+                </p>
+              </div>
+              <div class="flex flex-col items-end gap-2">
+                <a
+                  href="https://meli.la/1PvqX38"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block dl-accent-2-bg hover:opacity-95 text-black font-bold px-4 py-2 rounded"
+                  >Comprar</a
+                >
+                <button
+                  class="text-sm dl-muted underline"
+                  data-product="p3"
+                  onclick="openModal('p3')"
+                >
+                  Mais informações
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 text-sm dl-muted">
+              <strong>Uso:</strong> Intra/pós-treino ·
+              <strong>Dosagem:</strong> 5–10 g
+            </div>
+          </article>
+
+          <!-- Produto 4 Termogênico -->
+          <article class="dl-surface rounded-lg p-6 flex flex-col shadow-lg">
+            <div class="flex items-start gap-4">
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_2X_632052-MLA99984789713_112025-F.webp"
+                alt="Termogênico Dark Mamba"
+                class="w-28 h-28 object-contain rounded"
+                loading="lazy"
+              />
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold">Termogênico Dark Mamba</h3>
+                <p class="dl-muted text-sm mt-1">
+                  Energia, foco e termogênese para treinos intensos.
+                </p>
+              </div>
+              <div class="flex flex-col items-end gap-2">
+                <a
+                  href="https://meli.la/1imkApf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block dl-accent-2-bg hover:opacity-95 text-black font-bold px-4 py-2 rounded"
+                  >Comprar</a
+                >
+                <button
+                  class="text-sm dl-muted underline"
+                  data-product="p4"
+                  onclick="openModal('p4')"
+                >
+                  Mais informações
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 text-sm dl-muted">
+              <strong>Uso:</strong> Pré-treino ·
+              <strong>Dosagem:</strong> conforme rótulo
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr class="border-gray-800 mb-10" />
+
+      <!-- CTA final -->
+      <section
+        class="bg-gradient-to-r from-[#0f1113] to-[#0b0b0d] rounded-lg p-8 text-center glass"
+      >
+        <h3 class="text-2xl font-bold">Pronto para começar?</h3>
+        <p class="mt-2 dl-muted max-w-2xl mx-auto">
+          Use os produtos Dark Lab que eu uso e acompanhe o progresso. Clique
+          nos links para comprar com meu código de afiliado.
+        </p>
+        <div
+          class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="https://meli.la/1ptritQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="dl-accent-bg hover:opacity-95 text-black font-bold px-6 py-3 rounded"
+            >Comprar Whey</a
+          >
+          <a href="#produtos" class="text-gray-300 underline"
+            >Ver todos os produtos</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-800 py-6">
+      <div class="max-w-6xl mx-auto px-6 text-center text-gray-400 text-sm">
+        <p>
+          © <span id="year"></span> Resultados na Academia — Links de afiliado
+          Mercado Livre.
+        </p>
+        <p class="mt-1">
+          Consulte um profissional de saúde antes de iniciar qualquer
+          suplementação. Links são de afiliado e posso receber comissão pelas
+          vendas.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal template (hidden) -->
+    <div
+      id="modal"
+      class="fixed inset-0 z-50 hidden items-center justify-center p-4"
+    >
+      <div
+        id="modal-backdrop"
+        class="absolute inset-0 bg-black/70"
+        onclick="closeModal()"
+      ></div>
+      <div
+        class="relative max-w-3xl w-full bg-[#0b0b0d] rounded-lg overflow-hidden shadow-xl border border-gray-800"
+      >
+        <div class="p-6">
+          <div class="flex items-start gap-4">
+            <img
+              id="modal-img"
+              src=""
+              alt=""
+              class="w-28 h-28 object-contain rounded"
+            />
+            <div class="flex-1">
+              <h4 id="modal-title" class="text-xl font-bold"></h4>
+              <p id="modal-sub" class="dl-muted mt-1 text-sm"></p>
+            </div>
+            <button
+              aria-label="Fechar"
+              class="text-gray-400 hover:text-white"
+              onclick="closeModal()"
+            >
+              ✕
+            </button>
+          </div>
+
+          <div id="modal-body" class="mt-4 dl-muted text-sm space-y-3">
+            <!-- Conteúdo dinâmico -->
+          </div>
+
+          <div class="mt-6 flex items-center justify-end gap-3">
+            <a
+              id="modal-buy"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="dl-accent-2-bg hover:opacity-95 text-black font-bold px-4 py-2 rounded"
+              >Comprar no Mercado Livre</a
+            >
+            <button
+              class="px-4 py-2 border border-gray-700 rounded text-sm dl-muted"
+              onclick="closeModal()"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Atualiza ano no rodapé
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Dados dos produtos para o modal
+      const products = {
+        p1: {
+          title: "Whey Protein Isolado (LOW CARB)",
+          subtitle:
+            "Proteína isolada para máxima recuperação e síntese muscular.",
+          img: "https://http2.mlstatic.com/D_NQ_NP_2X_630816-MLA99935887857_112025-F.webp",
+          buy: "https://meli.la/1ptritQ",
+          body: `
+          <p><strong>Descrição:</strong> Whey Isolate de alta pureza, ideal para recuperação pós-treino e suporte à síntese proteica. Baixo teor de lactose e rápida absorção.</p>
+          <p><strong>Uso sugerido:</strong> 30 g após o treino. Consulte o rótulo para instruções completas.</p>
+          <p><strong>Benefícios:</strong> recuperação acelerada; suporte à hipertrofia; baixo teor de carboidrato.</p>
+        `,
+        },
+        p2: {
+          title: "Creatina Monohidratada Pura",
+          subtitle: "Força e performance para treinos intensos.",
+          img: "https://http2.mlstatic.com/D_Q_NP_848860-MLA99964507641_112025-R.webp",
+          buy: "https://meli.la/1FUBKa3",
+          body: `
+          <p><strong>Descrição:</strong> Creatina monohidratada micronizada, pura e sem aditivos. Auxilia no aumento de força e volume muscular quando combinada com treino de resistência.</p>
+          <p><strong>Uso sugerido:</strong> 5 g por dia. Pode ser tomada a qualquer momento do dia, preferencialmente com carboidrato.</p>
+          <p><strong>Precauções:</strong> manter hidratação adequada; seguir orientações do rótulo.</p>
+        `,
+        },
+        p3: {
+          title: "BCAA — Aminoácidos de Cadeia Ramificada",
+          subtitle: "Recuperação rápida e preservação da massa magra.",
+          img: "https://http2.mlstatic.com/D_NQ_NP_2X_861441-MLA100067599317_122025-F.webp",
+          buy: "https://meli.la/1PvqX38",
+          body: `
+          <p><strong>Descrição:</strong> BCAA combina leucina, isoleucina e valina em proporção ideal para acelerar a recuperação e proteger sua massa magra. Perfeito para quem treina pesado e quer reduzir o tempo de recuperação entre sessões.</p>
+          <p><strong>Uso sugerido:</strong> 5–10 g por dia; tomar 15–30 minutos antes do treino, durante ou imediatamente após.</p>
+          <p><strong>Benefícios:</strong> redução da fadiga; preservação de massa magra; suporte à recuperação.</p>
+        `,
+        },
+        p4: {
+          title: "Termogênico Dark Mamba",
+          subtitle: "Energia, foco e termogênese para treinos intensos.",
+          img: "https://http2.mlstatic.com/D_NQ_NP_2X_632052-MLA99984789713_112025-F.webp",
+          buy: "https://meli.la/1imkApf",
+          body: `
+          <p><strong>Descrição:</strong> Termogênico formulado para aumentar energia e foco, com ingredientes que auxiliam na termogênese. Indicado para quem busca otimizar queima de gordura aliada ao treino.</p>
+          <p><strong>Uso sugerido:</strong> 20–30 minutos antes do treino. Não exceder a dose recomendada no rótulo.</p>
+          <p><strong>Precauções:</strong> evitar uso próximo ao horário de dormir; não combinar com outras fontes de cafeína sem orientação; consultar médico em caso de hipertensão ou sensibilidade a estimulantes.</p>
+        `,
+        },
+      };
+
+      // Abre modal com dados do produto
+      function openModal(key) {
+        const data = products[key];
+        if (!data) return;
+        document.getElementById("modal-title").textContent = data.title;
+        document.getElementById("modal-sub").textContent = data.subtitle;
+        document.getElementById("modal-img").src = data.img;
+        document.getElementById("modal-img").alt = data.title;
+        document.getElementById("modal-body").innerHTML = data.body;
+        document.getElementById("modal-buy").href = data.buy;
+        const modal = document.getElementById("modal");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        // trap focus (basic)
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("modal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "";
+      }
+
+      // Fecha modal com ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+    </script>
+  </body>
+</html>
